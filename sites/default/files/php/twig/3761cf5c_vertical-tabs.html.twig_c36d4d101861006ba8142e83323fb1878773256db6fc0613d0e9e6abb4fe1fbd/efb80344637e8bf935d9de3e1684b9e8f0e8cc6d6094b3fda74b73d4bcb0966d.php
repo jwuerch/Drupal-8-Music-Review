@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/stable/templates/admin/views-ui-container.html.twig */
-class __TwigTemplate_154222db4c499c44b66f9f9a598c6446b80de946cf60481461389ce3bcb9a206 extends Twig_Template
+/* core/themes/classy/templates/navigation/vertical-tabs.html.twig */
+class __TwigTemplate_d4395bbf9c6fee2b57352fb75f9b237d35c84259af1b810b7aac4f908c9627dc extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,9 +39,9 @@ class __TwigTemplate_154222db4c499c44b66f9f9a598c6446b80de946cf60481461389ce3bcb
             throw $e;
         }
 
-        // line 11
+        // line 13
         echo "<div";
-        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "setAttribute", array(0 => "data-vertical-tabs-panes", 1 => true), "method"), "html", null, true));
         echo ">";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["children"]) ? $context["children"] : null), "html", null, true));
         echo "</div>
@@ -50,7 +50,7 @@ class __TwigTemplate_154222db4c499c44b66f9f9a598c6446b80de946cf60481461389ce3bcb
 
     public function getTemplateName()
     {
-        return "core/themes/stable/templates/admin/views-ui-container.html.twig";
+        return "core/themes/classy/templates/navigation/vertical-tabs.html.twig";
     }
 
     public function isTraitable()
@@ -60,18 +60,20 @@ class __TwigTemplate_154222db4c499c44b66f9f9a598c6446b80de946cf60481461389ce3bcb
 
     public function getDebugInfo()
     {
-        return array (  43 => 11,);
+        return array (  43 => 13,);
     }
 }
 /* {#*/
 /* /***/
 /*  * @file*/
-/*  * Theme override for a generic views UI container/wrapper.*/
+/*  * Theme override for vertical tabs.*/
 /*  **/
-/*  * Available variables:*/
-/*  * - attributes: HTML attributes to apply to the container element.*/
-/*  * - children: The remaining elements such as dropbuttons and tabs.*/
+/*  * Available variables*/
+/*  * - attributes: A list of HTML attributes for the wrapper element.*/
+/*  * - children: The rendered tabs.*/
+/*  **/
+/*  * @see template_preprocess_vertical_tabs()*/
 /*  *//* */
 /* #}*/
-/* <div{{ attributes }}>{{ children }}</div>*/
+/* <div{{ attributes.setAttribute('data-vertical-tabs-panes', TRUE) }}>{{ children }}</div>*/
 /* */
